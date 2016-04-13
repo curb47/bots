@@ -26,7 +26,7 @@ function Weather (token) {
 			var currentConditions = data.weather[0].description;
 			var currentTemp = Math.round(data.main.temp * 1.8 + 32) + '˚F';	// C -> F
 
-			var msg = 'The weather  in ' + data.name + '* is *' + currentTemp + '* and *' + currentConditions + '*.';
+			var msg = 'The weather  in *' + data.name + '* is *' + currentTemp + '* and *' + currentConditions + '*.';
 			fn(null, msg);
 		})
 	}
